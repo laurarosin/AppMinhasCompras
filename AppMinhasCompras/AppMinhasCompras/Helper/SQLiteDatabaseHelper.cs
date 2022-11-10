@@ -30,10 +30,10 @@ namespace AppMinhasCompras.Helper
 
         }
 
-        /*public Task<Produto> getBYId(int id)
+        public Task<Produto> getBYId(int id)
         {
             return new Produto();
-        }*/
+        }
 
         public Task<List<Produto>> GetALL()
         {
