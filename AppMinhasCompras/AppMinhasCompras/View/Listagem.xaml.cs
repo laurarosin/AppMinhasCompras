@@ -70,7 +70,7 @@ namespace AppMinhasCompras.View
 
             if (confirmacao)
             {
-                await App.Database.Delete();
+                await App.Database.Delete(produto_selecionado.Id);
                 lista_produtos.Remove(produto_selecionado);
             }
         }

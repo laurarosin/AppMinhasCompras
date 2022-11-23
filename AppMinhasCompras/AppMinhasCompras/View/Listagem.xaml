@@ -36,10 +36,10 @@
                                     <Label Grid.Row="0" Grid.Column="1" Text="{Binding Quantidade}"/>
                                     <Label Grid.Row="0" Grid.Column="2" Text="{Binding Preco}"/>
                                 </Grid>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Remover" Clicked="MenuItem_Clicked"/>
+                                </ViewCell.ContextActions>
                             </ViewCell>
-                            <ViewCell.ContextActions>
-                                <MenuItem Text="Remover" Clicked="MenuItem_Clicked"/>
-                            </ViewCell.ContextActions>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
