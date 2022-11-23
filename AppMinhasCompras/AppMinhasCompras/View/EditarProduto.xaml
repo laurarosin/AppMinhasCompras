@@ -4,20 +4,22 @@
              x:Class="AppMinhasCompras.View.EditarProduto">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked"
+        <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked">
+            
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
         
     <ContentPage.Content>
         <StackLayout>
             
             <Label Text="Descrição:"/>
-                <Entry x:Name="txt_descricao"/>
+                <Entry x:Name="txt_descricao" Text="{Binding Descricao}"/>
 
                 <Label Text="Quantidade"/>
-                <Entry x:Name="txt_quantidade"/>
+                <Entry x:Name="txt_quantidade" Text="{Binding Quantidade}"/>
 
                 <Label Text="Preço"/>
-                <Entry x:Name="txt_preco"/>
+                <Entry x:Name="txt_preco" Text="{Binding Preco}"/> 
 
         </StackLayout>
     </ContentPage.Content>
